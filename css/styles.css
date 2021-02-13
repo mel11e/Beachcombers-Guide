@@ -1,0 +1,15 @@
+Body 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Rock Salt', cursive;
+
+.d-flex {
+    float: right;
+}
+
+.nav-item {
+    align-items: center;
+}
+
+.bg-image {
+    width: 100%
+}
