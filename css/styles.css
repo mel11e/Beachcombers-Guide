@@ -1,6 +1,7 @@
-Body 
+/* body 
 font-family: 'Open Sans', sans-serif;
-font-family: 'Rock Salt', cursive;
+font-family: 'Rock Salt', cursive; */
+
 
 .d-flex {
     float: right;
@@ -11,5 +12,10 @@ font-family: 'Rock Salt', cursive;
 }
 
 .bg-image {
-    width: 100%
+    width: 100%;
+    height: 600px;
+    /* background-repeat: no-repeat; */
+    background-image: url('../images/Turtle.jpg');
+    background-size: cover;
+    padding: 0;
 }
