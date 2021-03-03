@@ -23,97 +23,220 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0E6VKB3R05"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E6VKB3R05"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-0E6VKB3R05');
-</script>
-<!-- Hotjar Tracking Code for https://mel11e.github.io/Beachcombers-Guide/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2274120,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
+        gtag('config', 'G-0E6VKB3R05');
+    </script>
+    <!-- Hotjar Tracking Code for https://mel11e.github.io/Beachcombers-Guide/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2274120, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
 
 <body>
 
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-                aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light" style="background: #1893D2; ">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-family: 'Rock Salt', cursive;;"><img
+                    src="images/turtleicon.svg" width="30" height="30" class="d-inline-block align-top logo"
+                    style="background-color: aqua;" alt="">Beachcomber's Guide</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <a class="navbar-brand" href="#">Logo</a>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Discover</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">Parks</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">Volunteer</a>
                     </li>
                 </ul>
-                <form class="d-flex" style="float: right;">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
-    <!-- Navbar -->
 
 
+    <!-- <div class="container">
+        <div class="row">
+          
+            <div class="col-md-12">
+              
+                <img src="images/Turtle.jpg" class="img-fluid ml-0 mr-0" style="width:100%" alt="Responsive image">
+              
+                <div class="carousel-caption">
+                  <h1>Example headline.</h1>
+                </div>          
+     </div>     
+      
+    </div> -->
+    <div class="row hero">
+        <div class="col-md-12" style="">
+            <img src="images/heroTurtle.jpg" alt="Snow" style="width:100%;" alt="Responsive image">
+            <div class="centered text-center">
+                <h1 style="font-family: 'Rock Salt', cursive;">Beachcomber's Guide</h1>
+                <h2>Texas Coastal Parks & Beaches</h2>
+            </div>
 
-    <!-- Background image -->
-    <!-- <div class="p-5 text-center bg-image">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
-            <div class="d-flex justify-content-center align-items-center h-100">
-                <div class="text-white">
-<<<<<<< HEAD
-                    <h1 class="mb-3">Beachcomber's Guide</h1>
-                    <h4 class="mb-3">Texas Coastal Regions & Parks</h4>
-                    <a class="btn btn-outline-light btn-lg" href="#!" role="button">Learn More</a>
-=======
-                    <h1 class="mb-3 centered">Beach Comber's Guide</h1>
-                    <h4 class="mb-3 centered">Texas Coasts & Parks</h4>
-                    <a class="btn btn-outline-light btn-lg centered" href="#!" role="button">Learn More</a>
->>>>>>> c8547a7b176bc1efe7aec8a9a53104a6e386208d
+        </div>
+    </div>
+
+    <div class="p-5">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="images/discover.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Discover</h5>
+                    <p class="card-text">There are many things to discover along a beach, if you take the time. Find out
+                        what you can spot walking on Texas beaches. Warning! Beachcombing can become an addiction.</p>
+
+                    <a href="#" class="btn btn-primary" style="background-color: #FF9900; border-color: white;">Learn
+                        More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/texasbeach.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parks</h5>
+                    <p class="card-text">Other than sand and surf on Texas beaches, there are parks along the coastal
+                        regions that offer a variety of attractions to keep you and your family engaged.
+                    </p>
+                    <a href="#" class="btn btn-primary" style="background-color: #FF9900; border-color: white;">Learn
+                        More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/volunteer.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Volunteer</h5>
+                    <p class="card-text">Get involved to help clean up Texas beaches, or help organizations in their
+                        efforts to rescue our sea creature friends.</p>
+                    <a href="#" class="btn btn-primary" style="background-color: #FF9900; border-color: white;">Learn
+                        More</a>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <div class="container">
-        <img src="images/Turtle.jpg" alt="Turtle" style="width:100%;">
-        <div class="centered background-color: light-blue;">
-            <h1 class="mb-3 centered">Beach Comber's Guide</h1>
-            <h4 class="mb-3 centered">Texas Coasts & Parks</h4>
-            <a class="btn btn-outline-light btn-lg centered" href="#!" role="button">Learn More</a>
+
+
+
+    <!-- Headline Carousel -->
+    <h2 class="text-center mb-3">Headlines</h2>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a
+                    href="https://www.nbcnews.com/news/us-news/sea-turtle-rescue-center-texas-takes-over-2-000-turtles-n1258160">
+                    <img class="d-block w-100" src="images/newsTurtle.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block text-white bg-warning">
+                        <h3>Sea turtle rescue center in Texas takes in over 2,500 turtles cold-stunned by winter storm
+                        </h3>
+                        <p>Sea Turtle, Inc., in South Padre Island reached out for help with keeping the thousands of
+                            turtles warm, prompting SpaceX to donate a generator.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a
+                    href="https://www.ksat.com/news/local/2021/02/02/thats-not-trash-on-texas-beaches-its-a-living-creature-padre-island-national-seashore-officials-say/"><img
+                        class="d-block w-100" src="images/newsSeaWhip.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block text-white bg-warning">
+                        <h3>That’s not trash on Texas beaches - it’s a living creature, Padre Island National Seashore
+                            officials say</h3>
+                        <p>Sea whip is a soft coral found on many U.S. beaches</p>
+                    </div>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://cgis.glo.texas.gov/Beachwatch/">
+                    <img class="d-block w-100" src="images/newsTexasWatch.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block text-white bg-warning">
+                        <h3>Texas Beach Watch</h3>
+                        <p>The goal of the Texas Beach Watch program is to provide the public with information about
+                            water quality at selected recreational beaches along the Texas coast in Aransas, Brazoria,
+                            Cameron, Galveston, Harris, and Jefferson, Matagorda, Nueces and San Patricio counties. </p>
+                    </div>
+                </a>
+            </div>
         </div>
-      </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
 
+    <div class="card p-5" style="background-color: whitesmoke;">
+        <div class="card-body align-self-center col-md-9">
+            <h2 class="card-title">Best Texas Beaches 2021</h2>
+            <p class="card-text">With more than 370 miles of coastline along the Gulf of Mexico's teal and emerald
+                water, Texas is home to plenty of beach vacation options. To determine which Texas beaches stand out
+                from the rest, U.S. News considered factors like sights, beach quality and amenities, as well as
+                reader and expert insight. Vote for your favorite stretch of sand in the Lone Star State below to
+                help influence next year's ranking.
+            </p>
+            
+            <p class="card-text"><small class="text-muted">Cited U.S. News</small></p>
+            <a href="#" class="btn btn-primary" style="background-color: #FF9900; border-color: white;">Go There
+            </a>
+        </div>
+        <img class="card-img-bottom align-self-center col-md-9" src="images/bestBeaches.jpg" alt="Card image cap">
+    </div>
 
-    <!-- Background image -->
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #0D95B0;">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: CTA -->
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3 pr-2">Register for our newsletter</span>
+                <button type="button" class="btn btn-outline-light btn-rounded">
+                  Sign up!
+                </button>
+              </p>
+            </section>
+            <!-- Section: CTA -->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: #0E485B;">
+            © 2021 Copyright
+            
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+
+
 
 </body>
 
