@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beachcomber's Guide</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0E6VKB3R05"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0E6VKB3R05');
+    </script>
+    <!-- Hotjar Tracking Code for https://mel11e.github.io/Beachcombers-Guide/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2274120, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light" style="background: #1893D2; ">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-family: 'Rock Salt', cursive;;"><img
+                    src="images/turtleicon.svg" width="30" height="30" class="d-inline-block align-top logo"
+                    style="background-color: aqua;" alt="">Beachcomber's Guide</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Discover</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Parks</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Get Involved</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Image -->
+    <div class="row hero">
+        <div class="col-md-12" style="">
+            <img src="images/volunteer.jpg" alt="Snow" style="width:100%;" alt="Responsive image">
+            <div class="centered text-center">
+                <h1 style="font-family: 'Rock Salt', cursive; color: aquamarine;" >Get Involved</h1>
+                <h2 style="color: aquamarine;">Help keep protect our Texas coastal regions by volunteering or donating to an organzation.
+                </h2>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Hero Image End -->
+
+
+    <!-- <div class="p-5 ">
+    <img src="images/adoptAbeach 1.jpg" class="rounded float-left mb-5" alt="Responsive image">
+</div>
+<div class="m-5">
+    <h5 class="">Adopt A Beach</h5>
+            <p class="">Help keep Texas beaches clean by regesitering at Adopt a Beach on their website.</p>
+            <a href="#" class="btn btn-primary" style="background-color: #FF9900; border-color: white;">Learn
+                More</a>
+</div> -->
+
+
+    <div class="card text-center p-5" *ngFor="let event of eventActivities">
+
+        <div class="card-header pull-left">
+            <h2 class="text-center mb-3 pt-3">Beach Cleanup</h2>
+            <img src="images/adoptAbeach 1.jpg" alt="">
+            <h4>Adopt A Beach</h4>
+            <p>Help keep Texas beaches clean by regesitering at Adopt a Beach on their website.</p>
+            <a href="https://texasadoptabeach.org/" class="btn btn-primary"
+                style="background-color: #FF9900; border-color: white;">Learn
+                More</a>
+        </div>
+    </div>
+
+    <div class="card text-center p-5" *ngFor="let event of eventActivities">
+        <div class="card-header pull-left">
+            <h2 class="text-center mb-3 pt-3">Support Wildlife Conservation Centers</h2>
+            <img src="images/saveTurtle.jpg" alt="">
+            <h4>SEA TURTLE, INC</h4>
+            <p>Sea Turtle, Inc mission is to educate people, restore the health of injured turtles, and be a leader in
+                conservation. This conservation organization is located in South Padre Island, TX.  Learn more about their efforts and consider giving a donation to them.</p>
+            <a href="https://seaturtleinc.org/" class="btn btn-primary"
+                style="background-color: #FF9900; border-color: white;">Learn
+                More</a>
+        </div>
+    </div>
+
+    <div class="card text-center p-5" *ngFor="let event of eventActivities">
+        <div class="card-header pull-left">
+            <h2 class="text-center mb-3 pt-3">Get Your Organization Involved</h2>
+            <img src="images/texasbynature.jpg" alt="">
+            <h4>Texan by Nature Certification</h4>
+            <p>The Texan by Nature Certification recogizes organization, employers, and individuals involved in conservation efforts that either benefit nature's resources or a community.  The projects can range from water conservation, educate the public, habitat development, and more.  Click below to learn more about their programs and what you can do. </p>
+            <a href="https://texanbynature.org/programs/txn-certification/" class="btn btn-primary"
+                style="background-color: #FF9900; border-color: white;">Learn
+                More</a>
+        </div>
+    </div>
+
+    <div class="container col-md-6 align-items-center p-5">
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Load More Organizations</button>
+    </div>
+
+
+
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #0D95B0;">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="me-3 pr-2">Register for our newsletter</span>
+                        <button type="button" class="btn btn-outline-light btn-rounded">
+                            Sign up!
+                        </button>
+                    </p>
+                </section>
+                <!-- Section: CTA -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #0E485B;">
+                © 2021 Copyright
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+</body>
+
+</html>
